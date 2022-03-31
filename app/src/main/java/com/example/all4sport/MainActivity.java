@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String login = "root";
                 String pwd = "root";
                 try {
-                    String url = "http://192.168.13.40:3000/connection/user/" + login + "/pswd/" + pwd;
+                    String url = "http://192.168.238.40:3000/connection/user/" + login + "/pswd/" + pwd;
                     token = APIConnection.get(url);
                     switchActivity(token);
                     Toast toast = Toast.makeText(MainActivity.this, token, Toast.LENGTH_LONG);
